@@ -1,5 +1,5 @@
 # dockerFile ubuntu 18.02 cuda10.2 ,python tensorflow gpu
-![My Remote Image](https://c0.klipartz.com/pngpicture/608/967/gratis-png-unidad-de-procesamiento-de-tensor-de-aprendizaje-profundo-aprendizaje-en-la-nube-computacion-en-nube-computacion-en-la-nube-thumbnail.png)
+
 
 # instrucions
 
