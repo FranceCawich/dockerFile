@@ -17,6 +17,7 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
         python-markdown \
         python-numpy \
         python-pip \
+        git \
          wget \
         && \
     apt-get clean
