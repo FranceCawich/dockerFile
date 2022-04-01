@@ -1,5 +1,5 @@
 
-FROM nvidia/cuda:10.2-cudnn7-devel-ubuntu18.04 as base
+FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04 as base
 LABEL opensciencegrid.name="TensorFlow GPU"
 LABEL opensciencegrid.description="TensorFlow image with GPU support"
 LABEL opensciencegrid.url="https://www.tensorflow.org/"
@@ -25,9 +25,9 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get install -y --allow-unauthenticated \
-        libnvinfer6=6.0.1-1+cuda10.2 \
-        libnvinfer-dev=6.0.1-1+cuda10.2 \
-        libnvinfer-plugin6=6.0.1-1+cuda10.2
+        libnvinfer6=6.0.1-1+cuda10.1 \
+        libnvinfer-dev=6.0.1-1+cuda10.1 \
+        libnvinfer-plugin6=6.0.1-1+cuda10.1
 
 RUN echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" >/etc/apt/sources.list.d/bazel.list && \
     curl https://bazel.build/bazel-release.pub.gpg | apt-key add -
